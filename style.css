@@ -1,0 +1,334 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+}
+.main-content{ 
+    background-color: #121212;
+     flex: 1;
+     border-radius: 1.5rem;
+     overflow: auto;
+     padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+}
+.nav{
+    height: 120px;
+    border-radius: 1rem;
+    background-color: #121212;
+    width: 90%;
+    margin: .5rem;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    opacity: .7;
+}
+.option:hover{
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    margin: 2rem 1em;
+}
+.option i{
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+.lib-main{
+    height: 2.5rem;
+    width: 90%;
+    background-color: #121212;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    opacity: .7;
+}
+.lib-main:hover{
+    opacity: 1;
+}
+.icon{
+    display: flex;
+    padding: 1rem;
+}
+.lib-main img{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1.5rem;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+}
+.lib-foot{
+    flex: 1;
+}
+.first-card{
+    height: 7.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #232323;
+}
+.head{
+  padding:.5rem;
+ margin-left: 1rem;
+ margin-bottom: .1rem;
+}
+.pera{
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+}
+ .btn{
+    margin-left: 1.5rem;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1rem;
+    border: none;
+}
+.second-card{
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #232323;
+}
+.sticky-nav{
+    height: 3rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: #121212;
+    z-index: 1;
+}
+.buttons{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.arrow{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.btn-e{
+    margin-top: .8rem;
+    height: 1.8rem;
+    width: 8.5rem;
+    border-radius: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    margin-top: 1.1rem;
+    margin-right: 3rem;
+}
+.install{
+    width: 10rem;
+    height: 1.5rem;
+    margin-top: 1.1rem;
+    margin-left: 1.5rem;
+}
+.ins{
+    margin-left: 0px;
+}
+@media (max-width:1210px){
+     .hide{
+        display: none;
+    }
+}
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width: 10rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.card img{
+width: 100%;
+border-radius: .5rem;
+}
+.text{
+    font-weight: 600;
+}
+.short{
+    font-size: .85rem;
+    opacity: .8;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.line{
+    height: 50%;
+    width: 90%;
+    border-top: 2px solid white;
+    opacity: .5;
+}
+.album{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player{
+    width: 50%;
+}
+.control{
+width: 25%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+}
+.player-icon{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-icon img{
+    height: 1rem;
+    margin: 1rem;
+    opacity: .5;
+}
+.player-icon img:hover{
+    height: 1.1rem;
+    opacity: 1;
+}
+#play{
+    height: 1.5rem;
+    opacity: 1;
+    margin: .7rem;
+}
+.pro-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.pro-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 6.2rem;
+    height: .2rem;
+}
+.pro-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.img1{
+    height: 70%;
+    border-radius: .5rem;
+}
+.img2{
+    height: 1.3rem;
+    width: 1.3rem;  
+}
+.img3{
+    height: 1.7rem;
+    width: 1.7rem; 
+}
+.perag{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.perag p{
+    margin: 0;
+}
+.p1{
+    font-weight: 600;
+}
+.p2{
+    font-size: .8rem;
+}
+.icon1{
+    height: 3rem;
+    width: 3rem;
+}
+.icon2{
+    height: 1rem;
+    width: 1rem;
+}
+.icon3{
+    height: 1rem;
+    width: 1rem;
+}
+.icon4{
+    height: 1rem;
+    width: 1rem;
+}
+.icon5{
+    height: 2rem;
+    width: 2rem;
+}
+.volume{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.volume::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 6.2rem;
+    height: .2rem;
+}
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
